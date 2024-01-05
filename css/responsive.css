@@ -1,0 +1,330 @@
+
+@media screen and (max-width: 768px) {
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #logo {
+        padding-top: 8px;
+        width: 80px;
+        height: 60px;
+    }
+
+    #hamburger {
+        color: black;
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #menu {
+        display: block; 
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        padding: 0;
+        background-color: #e7e7e7;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .links {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #inicio {
+        display: block;
+        align-items: center;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+     #imagem-agencia {
+        display: none;
+    }
+
+    h1,
+    h2 {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .paragrafo {
+        padding: 20px;
+        line-height: 150%;
+        margin-bottom: 52px;
+    }
+    
+    #primeiro-paragrafo {
+        padding-bottom: 0px;
+    }
+    
+    .botao {
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        background-color: #080765;
+        max-width: 200px;
+        border-radius: 20px;
+        margin-right: 0;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.0) !important;
+    }
+    
+    .botao-transparente {
+        display: block;
+        margin-left: 20px;
+        background-color: rgb(251, 247, 247);
+        max-width: 240px;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        font-weight: 600;
+        padding: 16px 42px;
+        text-decoration: none;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3) !important;
+    }
+
+    .butoes {
+        position: relative;
+        flex-direction: column;
+    }
+
+    #icones {
+        display: block;
+        flex-direction: column;
+        gap: 0;
+        padding: 64px 80px;
+        font-family: sans-serif;
+    }
+    
+    .icone-escrita {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border: 2px solid #000000;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .titulo-h6 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    
+    .paragrafo-icones {
+        font-size: 16px;
+        max-width: 250px;
+        line-height: 20px;
+    }
+    
+    .todos-os-icones {
+        display: block;
+        align-items: center;
+        gap: 90px;
+    }
+
+    #otimizacao {
+        display: block;
+        margin-top: 0;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .h1-otimizacao{
+        padding: 0;
+    }
+    
+    .paragrafo-otimizacao {
+        max-width: 280px;
+    }
+    
+    #imagem-aviao {
+        padding: 0;
+        margin: 0;
+        
+        width: 350px;
+        height: 350px;
+    }
+
+    #btn-orcamento {
+        background-color: #0401a4;
+        padding: 16px 62px;
+        text-align: center;
+        border-radius: 20px;
+        margin-right: 0px;
+        margin-left: 35px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3) !important;
+    }
+
+    #duvidas {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #icone-duvidas {
+        width: 40px;
+        height: 40px;
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    
+    #faq-h1 {
+        margin-left: 140px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    #faq-p {
+        margin-left: 0px;
+        max-width: 945px;
+    }
+    
+    .duvida {
+        position: relative;
+    }
+    
+    .seta {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 18px;
+    }
+    
+    .duvida h4 {
+        background-color: #E7E7E7;
+        border: 2px solid #0401a4;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    
+    .paragrafo-duvida {
+        border-right: 1px solid #0401a4;
+        border-bottom: 1px solid #0401a4;
+        border-left: 1px solid #0401a4;
+        border-radius: 0 0 8px 8px;
+        margin-top: -27px;
+        padding: 0 24px;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+    .duvida.ativa .paragrafo-duvida {
+        background-color: #ffffff;
+        height: fit-content;
+        opacity: 1;
+        padding: 24px;
+    }
+
+    #footer {
+        display: block;
+        align-items: center;
+        gap: 0px;
+        border-top: 4px solid black;
+        background-color: #e7e7e7;
+        padding-bottom: 30px;
+    }
+    
+    #logo-footer {
+        width: 110px;
+        height: 100px;
+        margin-left: 140px;
+        margin-top: 40px;
+    }
+    
+    .icones-footer {
+        width: 50px;
+        height: 50px;
+        margin-left: 46px;
+        margin-top: 30px;
+    }
+    
+    #rodape {
+        max-width: 200px;
+        list-style: none;
+        margin-left: 140px;
+    }
+    
+    .links-rapidos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .texto-rodape {
+        padding-left: 140px;
+    }
+
+    .links-rodape {
+        display: block;
+        text-decoration: none;
+        margin-top: 10px;
+        color: #000000;
+    }
+
+}
