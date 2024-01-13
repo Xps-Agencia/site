@@ -195,9 +195,12 @@
     #imagem-aviao {
         padding: 0;
         margin: 0;
+        margin-left: 15%;
+        margin-bottom: 30px;
+        margin-top: 20px;
         
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 150px;
     }
 
     #btn-orcamento {
@@ -206,7 +209,7 @@
         text-align: center;
         border-radius: 20px;
         margin-right: 0px;
-        margin-left: 35px;
+        margin-left: 12%;
         color: white;
         text-decoration: none;
         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3) !important;
@@ -292,7 +295,7 @@
     }
     
     #logo-footer {
-        width: 110px;
+        width: 150px;
         height: 100px;
         margin-left: 140px;
         margin-top: 40px;
